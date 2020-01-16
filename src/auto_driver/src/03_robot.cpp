@@ -181,17 +181,25 @@ public:
   }
 
   void UpdateStatePose(double delta_t) {
-    x = x + x_dot*delta_t;
-    y = y + y_dot*delta_t;
-    theta = fmod(theta + theta_dot*delta_t,2*M_PI);
-    theta = (theta < -M_PI) ? theta + 2*M_PI : theta;
-    theta = (theta > M_PI) ? theta - 2*M_PI : theta;
+    // WRITE YOUR CODE: BEGIN
+
+    // Implement update for:
+    // x
+    // y
+    // theta
+
+    // WRITE YOUR CODE: END
   }
 
   void UpdateStateVelocity(double x_dot, double y_dot, double theta_dot) {
-    this->x_dot = x_dot;
-    this->y_dot = y_dot;
-    this->theta_dot = theta_dot;
+    // WRITE YOUR CODE: BEGIN
+
+    // Implement update for:
+    // this->x_dot
+    // this->y_dot
+    // this->theta_dot
+
+    // WRITE YOUR CODE: END
   }
 
   // Operators
