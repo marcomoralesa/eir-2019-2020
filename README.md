@@ -1,19 +1,25 @@
-# Project 3 - Implementation of Control Laws for Car-Like Robot
-## Autonomous Robots Course
+# Escuela de Invierno de Robótica 2019-2020
+## Control y Simulación de un Coche Robótico
+## Modelado, Control y Simulación de Robots Móviles
 
-In this project you will implement the methods for four control laws as covered in class:
-* Move to Point
-* Follow Path
-* Move to Pose
-* Follow Line
+En este proyecto se implementa:
+* El modelo cinemático de un coche robótico
+* Ley de control para mover el robot:
+  * Move to Point
+  * Follow Path
+  * Move to Pose
+  * Follow Line
 
+Los archivos de arranque contienen un machote de código con la estructura mínima de clases dentro de un workspace de ROS. 
 
-The starter files contain code that implement most of the needed functionality and the project has the structure of a ROS workspace. After cloning your project and before compiling with catkin_make, please make to understand the code. Then, make the necessary editions so the project can compile.
+### Archivos de arranque
+Los archivos se pueden obtener en la URL listada en el botón verde etiquetado "Clone or Download"
 
-### Getting the Starter Files
-The files can be obtained using the URL listed in the green button above labeled "Clone or Download"
+```$ git clone [URL]```
 
-```$ git clone [Team URL]```
+### Compilación inicial
+Después de obtener el código, ejecuta catkin_make. 
+
 
 ### Files
 * auto_driver/src:
@@ -29,12 +35,4 @@ The files can be obtained using the URL listed in the green button above labeled
   * 03_test.cpp - this program helps send paths to the controllers program without having to manually publish messages from the terminal. Feel free to try different paths
 * auto_driver/CMakeLists.txt - compiling directives
 
-### Submission
-The project will be submitted through classroom.github.com
-
-## Grade:
-|      Code     | Move to Point |  Follow Path  |  Move to Pose |  Follow Line  | Total |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ----- |
-|               |               |               |               |               |       |
-
-
+###
