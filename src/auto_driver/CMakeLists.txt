@@ -199,6 +199,14 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
+add_executable(01_open_loop_driver src/01_open_loop_driver.cpp)
+target_link_libraries(01_open_loop_driver ${catkin_LIBRARIES})
+add_dependencies(01_open_loop_driver autonomous_robots_course_messages_cpp)
+
+add_executable(02_pose_estimation src/02_pose_estimation.cpp)
+target_link_libraries(02_pose_estimation ${catkin_LIBRARIES})
+add_dependencies(02_pose_estimation autonomous_robots_course_messages_cpp 03_robot)
+
 add_executable(03_controllers src/03_controllers.cpp)
 target_link_libraries(03_controllers ${catkin_LIBRARIES})
 add_dependencies(03_controllers autonomous_robots_course_messages_cpp 03_robot)
