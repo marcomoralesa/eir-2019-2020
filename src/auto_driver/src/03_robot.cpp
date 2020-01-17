@@ -179,6 +179,17 @@ public:
     u.gamma = gamma;
     return u;
   }
+
+ void UpdateStateDeadReckoning(double v, double gamma, double delta_t) {
+    this->v = v;
+    this->gamma = gamma;
+    
+    this->UpdateStateVelocity(v*cos(theta),
+			      v*sin(theta),
+			      (v/length)*tan(gamma));
+    this->UpdateStatePose(delta_t);
+  }
+	
 	
   void UpdateStateIMU(double x_dot_dot, double y_dot_dot, double theta_dot, double delta_t) {
     this->UpdateStateVelocity(x_dot + (x_dot_dot)*delta_t,
